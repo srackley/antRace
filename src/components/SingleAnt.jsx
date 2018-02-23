@@ -1,16 +1,16 @@
 import React from 'react';
 
-export default class SingleAnt extends React.Component {
-  constructor(props) {
-    super(props);
-    this.state = {};
-  }
+const SingleAnt = ({
+  name, length, color, weight // eslint-disable-line
+}) => (
+  <div className="SingleAnt">
+    <ul>
+      <li>{name}</li>
+      <li>{color}</li>
+      <li>{weight}</li>
+      <li>{length}</li>
+    </ul>
+  </div>
+);
 
-  render() {
-    return (
-      <div className="SingleAnt">
-        SingleAnt
-      </div>
-    );
-  }
-}
+export default SingleAnt;
